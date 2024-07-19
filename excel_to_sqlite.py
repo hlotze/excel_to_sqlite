@@ -43,7 +43,7 @@ def main():
             st.download_button(
             label="Download sqlite",
             data=file,
-            file_name=f"{fn.split('.')[0]}.sqlite")
+            file_name=f"{fn.split('.')[0]}.sqlite"
 
 if __name__ == '__main__':
     main()
