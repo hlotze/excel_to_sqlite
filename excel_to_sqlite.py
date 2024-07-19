@@ -9,7 +9,7 @@ def main():
     """Main function to upload the Excel file and download the Sqlite file."""
     st.write('<h1>Excel to Sqlite</h1>', unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Choose one Excel-file to upload",
-                                     type=['xls', 'xlsx'],
+                                     type=['xlsx'],
                                      accept_multiple_files=False)
     if uploaded_file is not None:
         df_dict = pd.read_excel(uploaded_file,
