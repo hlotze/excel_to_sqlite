@@ -30,7 +30,6 @@ def main():
                 shown_rows = 10
             st.write(f'{shown_rows} rows of {str(len(df_dict[sheet].index))} shown here')
             st.write(df_dict[sheet].head(10))
-            print('\n<br />\n')
 
             # store to sqlite file
             df_dict[sheet].to_sql(sheet, con, if_exists="replace")
